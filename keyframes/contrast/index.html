@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            main {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            section {
+                width: 500px;
+                height: 500px;
+                border-radius: 10px;
+                background: url("../img/goldroger.png");
+                animation: contrast 2s infinite;
+            }
+            /* ajusta o constraste do elemento */
+            @keyframes contrast {
+                0% {
+                    filter: contrast(0%);
+                }
+                100% {
+                    filter: contrast(200%);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        
+        <main>
+            <section></section>
+        </main>
+    </body>
+</html>
