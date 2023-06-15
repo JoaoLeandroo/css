@@ -1,0 +1,27 @@
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 500px;
+    height: 500px;
+    background: url("../img/goldroger.png");
+    border-radius: 10px;
+    animation: animation 2s infinite;
+}
+
+/* blur aplica um efeito para borrar a imagem */
+
+@keyframes animation{
+    0% {
+        filter: blur(5px);
+    }
+    100% {
+        filter: blue(15px);
+    }
+}
+
