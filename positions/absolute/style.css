@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* É necessario o uso do position relative na class pai, para o position absolute ficar restrito apenas a ele, e não a todo o conteudo fora da class pai. */
+.father {
+    width: 500px;
+    height: 500px;
+    background-color: #ff0000;
+    position: relative;
+}
+
+.son {
+    width: 50px;
+    height: 50px;
+    background-color: #0000ff;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
